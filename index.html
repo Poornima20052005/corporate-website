@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaCorp Company</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+
+body{line-height:1.6}
+
+/* NAVBAR */
+header{
+  background:#0a2540;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  padding:15px 30px;
+  flex-wrap:wrap;
+}
+header h1{font-size:22px}
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:10px;
+  font-weight:bold;
+}
+nav a:hover{color:#00c2ff}
+
+/* HERO */
+.hero{
+  background:url("https://images.unsplash.com/photo-1497366216548-37526070297c") center/cover;
+  color:white;
+  text-align:center;
+  padding:120px 20px;
+}
+.hero h2{font-size:40px}
+.hero button{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  background:#00c2ff;
+  color:white;
+  cursor:pointer;
+}
+.hero button:hover{background:#0099cc}
+
+/* SECTIONS */
+section{padding:60px 30px;text-align:center}
+.light{background:#f4f6f8}
+
+/* CARDS */
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+  margin-top:30px;
+}
+.card{
+  width:280px;
+  background:white;
+  padding:20px;
+  border-radius:8px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+.card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  border-radius:6px;
+}
+.card h3{margin:10px 0}
+.card button{
+  padding:10px 20px;
+  border:none;
+  background:#0a2540;
+  color:white;
+  cursor:pointer;
+}
+.card button:hover{background:#00c2ff}
+
+/* STATS */
+.stats{
+  background:#0a2540;
+  color:white;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.stats div{margin:20px}
+.stats h3{font-size:32px}
+
+/* FORM */
+form{
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+input,textarea{
+  padding:12px;
+  border:1px solid #ccc;
+}
+textarea{height:120px}
+form button{
+  padding:12px;
+  border:none;
+  background:#0a2540;
+  color:white;
+}
+form button:hover{background:#00c2ff}
+
+/* FOOTER */
+footer{
+  background:#0a2540;
+  color:white;
+  padding:20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  header{flex-direction:column;text-align:center}
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1>NovaCorp</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Projects</a>
+    <a href="#">Careers</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Corporate Business Solutions</h2>
+  <p>We help companies grow with modern technology</p>
+  <button>Get Started</button>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551434678-e076c223a692">
+      <h3>Web Development</h3>
+      <p>Modern responsive business websites.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c">
+      <h3>Consulting</h3>
+      <p>Business strategy and digital growth.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978">
+      <h3>Cloud Services</h3>
+      <p>Secure scalable infrastructure.</p>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <h2>Projects Delivered</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+      <h3>E-Commerce Platform</h3>
+      <p>Scalable global online store.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+      <h3>Startup Website</h3>
+      <p>Branding + full website build.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998">
+      <h3>Corporate Dashboard</h3>
+      <p>Analytics system for enterprise.</p>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div><h3>120+</h3><p>Clients</p></div>
+  <div><h3>300+</h3><p>Projects</p></div>
+  <div><h3>10 Years</h3><p>Experience</p></div>
+  <div><h3>25 Awards</h3><p>Recognition</p></div>
+</section>
+
+<section>
+  <h2>Careers</h2>
+  <p>Join our growing team</p>
+  <div class="cards">
+    <div class="card">
+      <h3>Frontend Developer</h3>
+      <p>HTML, CSS, UI Design</p>
+      <button>Apply</button>
+    </div>
+    <div class="card">
+      <h3>Business Analyst</h3>
+      <p>Strategy & reporting</p>
+      <button>Apply</button>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button>Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 NovaCorp Solutions</p>
+</footer>
+
+</body>
+</html>
